@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Cuestionario</title>
+    <style type="text/css">
+            label {
+                color: red;
+            }
+            .button{color: blue}
+            .submit{color:  green}ç
+            .titulo{background: #FFFFAA}
+            tr{background:  #00CCFF}
+    </style>
+</head>
+<body>
+<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+<table border="20">
+    <tr>
+        <th  style type=red colspan="2"> User Form </th>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td><input type= "text" placeholder="escribe tu nombre" NAME="nombre"></td>    
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type= "text" placeholder="escribe tu contraseña" NAME="password"></td>
+    </tr>
+    <tr>
+        <td>Dirección</td>
+        <td><textarea id=dirección></textarea></td>
+    </tr>
+    <tr>
+        <td>Sexo</td>
+        <td><input type="radio" name="sexo" id="hombre" value="hombre"><label  for="hombre">Hombre</label><br/>
+            <input type="radio" name="sexo" id="mujer" value="mujer"><label for="mujer">Mujer</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Edad</td>
+        <td><select name="edad" id="edad">
+            <option value=""></option>
+            <option value="Menor de 16">Menor de 16</option>
+            <option value="16,17 y 18">16, 17 y 18</option>
+            <option value="Mayor de 18">Mayor de 18</option>
+        </td>
+    </tr>
+    <tr>
+        <td>Deporte</td>
+        <td><input type="checkbox" name="deportes[]" id="fútbol" value="fútbol"><label for="fútbol">Fútbol</label><br/>
+        <input type="checkbox" name="deportes[]" id="baloncesto" value="baloncesto"><label for="baloncesto">baloncesto</label><br/>    
+        <input type="checkbox" name="deportes[]" id="hockey" value="hockey"><label for="hockey">hockey</label><br/>        
+        <input type="checkbox" name="deportes[]" id="polo de agua" value="polo de agua"><label for="polo de agua">polo de agua</label><br/>
+        <input type="checkbox" name="Deporte[]" id="otro" value="otro"><label for="otro">otro</label><br/></td>
+    </tr>
+    <tr>
+        <th colspan="2"><input type="file" value="examinar...">
+    </tr>
+    <tr>
+        <th colspan="2"><input type="button" value="clickame"><input type="reset" value="reestablecer"><input type="submit" class="submit" value="enviar">
+
+</table>
+</body>
+</html>
